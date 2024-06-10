@@ -1,23 +1,42 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+const {title} = Astro.props;
+
+const pageTitle = "Empresa";
+
+const identity = {
+	businessName: "Ventanas Ventaki SL",
+	region: "Euskadi",
+	services: "Fabricación y Montaje de Ventanas de Aluminio y PVC",
+	experience: "10 años"
+}
+
+const relatedProducts = ["Aluminio", "PVC", "Madera", "Doble acristalamiento", "Triple acristalamiento", "Aislante térmico", "Aislante sonoro", "Estores"];
+
+const happy = true;
+const finished = false;
+const goal = 1000000;
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Ventaki</title>
-	</head>
-	<body>
-		<h1>Ventaki</h1>
+<BaseLayout title="Ventaki">
+	<main>
 		<h2>Sobre Nosotros</h2>
 		<h3>Y nuestro trabajo</h3>
 
-		<nav>
-			<a href="/">(LOGO)</a>
-			<a href="/empresa">Empresa</a>
-		</nav>
-	</body>
-</html>
+		<section>
+			<h3>Somos {identity.businessName} y desde hace más de {identity.experience} nos dedicamos a la {identity.services}.</h3>
+			<p>
+				Hemos trabajo y dado servicio a miles de clientes particulares y de empresa por todo {identity.region}  gracias a un servicio
+				que ha hecho que nuestro mejor marketing sea el boca a oreja.
+			</p>
+			<p>Estos son algunos de nuestros productos:</p>
+			<ul>
+				{relatedProducts.map((product) => <li>{product}</li>)}
+			</ul>
+
+			{happy && <p>Estamos felices con la trayectoria de la empresa.</p>}
+			{finished && <p>Damos por conlcuida nuestra etapa y cerramos la empresa.</p>}
+			{goal === 1000000 ? <p>Nuestro objetivo es facturar {goal}€ al año.</p> : <p>No tenemos un objetivo de facturación anual.</p>}
+		</section>
+	</main>
+</BaseLayout>

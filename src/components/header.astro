@@ -1,0 +1,37 @@
+---
+const {title} = Astro.props
+
+const logoSrc = "/logo_ventaki.png.webp";
+const logoDescription = "El logo de la empresa, en rojo vivo y mayúsculas.";
+---
+<header>
+    <nav class="navBar">
+        <a href="/" class="navLogo">
+            <img src={logoSrc} alt={logoDescription} width="500" height="200">
+        </a>
+
+        <ul class="navMenu">
+            <li class="navItem">
+                <a href="" class="navLink">Productos</a>
+            </li>
+            <li class="navItem">
+                <a href="" class="navLink">Empresa</a>
+            </li>
+            <li class="navItem">
+                <a href="" class="navLink">Financiación</a>
+            </li>
+            <li class="navItem">
+                <a href="" class="navLink">Galería</a>
+            </li>
+            <li class="navItem">
+                <a href="" class="navLink">Contacto</a>
+            </li>
+        </ul>
+
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,82 @@
+/* Variables */
+:root {
+    --main-title-color: red;
+    --main-title-font-size: 4rem;
+}
+
+/* Estilos generales para todas las páginas */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 5%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Menú */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navLogo {
+        max-width: 50%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .hamburguer {
+        cursor: pointer;
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #101010;
+        }
+        
+        /* .barLarge {
+            width: 25px;
+        }
+        
+        .barShort {
+            width: 8px;
+            margin-right: 0;
+        } */
+    }
+}
+
+/* Estilos de la Landing Page --index.astro-- */
+.mainElement {
+    width: 100%;
+    background-image: url('/ventanalMain.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .mainH1 {
+        font-size: 4rem;
+    }
+}
+
+
