@@ -81,10 +81,11 @@ a {
     .mainContainer{
         background: rgba(0, 0, 0, 0.3);
         padding: 10%;
-        padding-top: 25%;
+        padding-top: 30%;
+        padding-bottom: 20%;
 
         .mainH1 {
-            font-size: 4rem;
+            font-size: 3rem;
             color: white;
         }
     } 
