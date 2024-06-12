@@ -2,24 +2,25 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="Ventaki">
-    <section class="backgroundImg">
-        <div class="textOverImg">
-            <h1 class="fontWhite">Damos luz, seguridad y confort a tu hogar.</h1>
-        </div>
-    </section>
-    <section class="background">
-        <form action="" class="floatingForm">
-            <h2 class="formTitle">Presupuesto y asesoramiento, gratis: </h2>
-            <label class="formLabel" for="nombre">Nombre</label>
-            <input class="textInput" type="text" name="nombre" id="">
-            <label class="formLabel" for="apellidos">Apellidos</label>
-            <input class="textInput" type="text" name="apellidos" id="">
-            <label class="formLabel" for="tlf">Número de teléfono</label>
-            <input class="textInput" type="text" name="tlf" id="">
-            <input class="submitInput" type="submit" value="Te llamamos">
-        </form>
-    </section>
-
+    <main>
+        <article class="backgroundImg">
+            <section class="textOverImg">
+                <h1 class="fontWhite">Damos luz, seguridad y confort a tu hogar.</h1>
+            </section>
+        </article>
+        <article class="background">
+            <form action="" class="floatingForm">
+                <h2 class="formTitle">Presupuesto y asesoramiento, gratis: </h2>
+                <label class="formLabel" for="nombre">Nombre</label>
+                <input class="textInput" type="text" name="nombre" id="">
+                <label class="formLabel" for="apellidos">Apellidos</label>
+                <input class="textInput" type="text" name="apellidos" id="">
+                <label class="formLabel" for="tlf">Número de teléfono</label>
+                <input class="textInput" type="text" name="tlf" id="">
+                <input class="submitInput" type="submit" value="SOLICITAR">
+            </form>
+        </article>
+    </main>
     <script>
         function reorganizeMainDiv() {
             var backgroundImg = this.document.querySelector('.backgroundImg');
@@ -27,6 +28,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
             if (961 <= this.window.innerWidth) {
                 backgroundImg.append(background);
+            } else {
+                backgroundImg.parentNode.append(background);
             }
         };
 

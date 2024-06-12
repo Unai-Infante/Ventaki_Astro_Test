@@ -1,25 +1,26 @@
 /* Variables */
 :root {
     --white-color: white;
-    --white-color-10-transparent: rgba(255, 255, 255, 0.1);
+    --white-color-10-transparent: rgba(255, 255, 255, 0.25);
     --white-color-90-transparent: rgba(255, 255, 255, 0.9);
     --light-gray-color: #F1F1F1;
     --black-color: #191919;
     --gray-color: #c0c0c0;
     --dark-gray-color: #B4B4B8;
+    --red-color: #C40C0C;
 }
 
 /* Estilos generales para todas las páginas */
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
     width: 90vw;
     padding: 5vw;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--white-color);
     position: absolute;
     top: 0;
 }
@@ -28,12 +29,18 @@ body {
     width: 100vw;
 }
 
+footer {
+    width: 90vw;
+    padding: 5vw;
+    background-color: var(--white-color);
+}
+
 h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 li {
@@ -101,6 +108,7 @@ a {
 
 .background {
     width: 90%;
+    /* background-color: rgba(172, 0, 0, 0.3); */
     background-color: var(--light-gray-color);
     padding: 5%;
 }
@@ -126,6 +134,43 @@ a {
         margin-bottom: 4%;
         padding: 4%;
         border: solid 1px var(--gray-color);
-        border-radius: 2px;
+        border-radius: 5px;
     } 
+
+    .submitInput {
+        align-self: center;
+        width: 60%;
+        margin-top: 5%;
+        padding: 5%;
+        background-color: var(--red-color);
+        border-radius: 5px;
+        color: var(--white-color);
+        font-weight: 500;
+        border: none;
+        box-shadow: 0px 2px 2px var(--gray-color);
+    }
+}
+
+.footerTitle {
+    font-weight: 500;
+}
+
+.footerBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .footerSection {
+        margin: 5%;
+        flex: 1 1 30%;
+
+        p {
+            font-weight: 500;
+            margin-bottom: 5%;
+        }
+
+        li {
+            margin-bottom: 3%;
+        }
+    }
 }
