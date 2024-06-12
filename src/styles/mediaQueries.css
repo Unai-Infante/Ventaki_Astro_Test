@@ -35,6 +35,11 @@
         }
     }
 
+    .importantText {
+        width: 90%;
+        padding: 5%;
+    }
+
     .footerBody {
 
         .footerSection {

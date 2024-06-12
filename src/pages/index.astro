@@ -5,12 +5,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <main>
         <article class="backgroundImg">
             <section class="textOverImg">
-                <h1 class="fontWhite">Damos luz, seguridad y confort a tu hogar.</h1>
+                <h1 class="fontWhite">Hacemos que estar en casa sea <span class="italic">agradable.</span></h1>
             </section>
         </article>
         <article class="background">
             <form action="" class="floatingForm">
-                <h2 class="formTitle">Presupuesto y asesoramiento, gratis: </h2>
+                <h2 class="formTitle">Asesoramos y preparamos un presupuesto, gratis: </h2>
                 <label class="formLabel" for="nombre">Nombre</label>
                 <input class="textInput" type="text" name="nombre" id="">
                 <label class="formLabel" for="apellidos">Apellidos</label>
@@ -19,6 +19,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 <input class="textInput" type="text" name="tlf" id="">
                 <input class="submitInput" type="submit" value="SOLICITAR">
             </form>
+        </article>
+        <article class="importantText">
+            <h2 class="headline">Deja los problemas fuera de tu hogar.</h2>
+            <p class="subHeadline">Más de 30 años en el sector dan para mucho. Gracias a esa experiencia nos aseguramos de que el frío, el calor y el ruido sean cosas de la calle, no de tu casa. Contamos con ventanas de máxima calidad y aislamiento, pero también con profesionales que tratarán tu casa como la suya.</p>
         </article>
     </main>
     <script>
@@ -29,7 +33,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             if (961 <= this.window.innerWidth) {
                 backgroundImg.append(background);
             } else {
-                backgroundImg.parentNode.append(background);
+                // backgroundImg.parentNode.append(background);
             }
         };
 

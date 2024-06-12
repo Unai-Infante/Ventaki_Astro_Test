@@ -25,7 +25,7 @@ header {
     top: 0;
 }
 
-body {
+main {
     width: 100vw;
 }
 
@@ -37,6 +37,7 @@ footer {
 
 h1 {
     font-size: 3rem;
+    font-weight: 750;
 }
 
 h2 {
@@ -53,6 +54,10 @@ a {
 
 .fontWhite {
     color: var(--white-color);
+}
+
+.italic {
+    font-style: italic;
 }
 
 /* Menú */
@@ -148,6 +153,20 @@ a {
         font-weight: 500;
         border: none;
         box-shadow: 0px 2px 2px var(--gray-color);
+    }
+}
+
+.importantText {
+    width: 80%;
+    padding: 10%;
+
+    .headline {
+        font-weight: 1000;
+        margin-bottom: 2rem;
+    }
+
+    .subHeadline {
+        line-height: 2rem;
     }
 }
 
