@@ -2,11 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="Ventaki">
-	<main class="backgroundImg">
-		<div class="mainContainer">
-			<h1 class="fontWhite">Damos luz, seguridad y confort a tu hogar.</h1>
-		</div>
-	</main>
+    <section class="backgroundImg">
+        <div class="textOverImg">
+            <h1 class="fontWhite">Damos luz, seguridad y confort a tu hogar.</h1>
+        </div>
+    </section>
     <section class="background">
         <form action="" class="floatingForm">
             <h2 class="">Presupuesto y asesoramiento, gratis: </h2>
@@ -16,4 +16,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <input type="submit" value="Te llamamos">
         </form>
     </section>
+
+    <script>
+        function reorganizeMainDiv() {
+            var backgroundImg = this.document.querySelector('.backgroundImg');
+            var background = this.document.querySelector('.background');
+
+            if (961 <= this.window.innerWidth) {
+                backgroundImg.append(background);
+            }
+        };
+
+        window.addEventListener('load', reorganizeMainDiv);
+        window.addEventListener('resize', reorganizeMainDiv);
+    </script>
 </BaseLayout>

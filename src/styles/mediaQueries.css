@@ -1,0 +1,32 @@
+/* Portátiles y escritorio */
+@media (min-width:961px) {
+    header {
+        width: 96vw;
+        padding: 2vw;
+        background: var(--white-color-transparent);
+    }
+
+    .backgroundImg {
+        width: 100%;
+        display: flex;
+
+        .textOverImg {
+            width: 70%;
+            padding-top: 20%;
+            padding-bottom: 20%;
+        }
+    }
+    
+    .background {
+        background: rgba(0, 0, 0, 0.3);
+        width: 40%;
+        padding: 5%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .floatingForm {
+        width: 80%;
+        padding: 10%;
+    }
+}
