@@ -9,11 +9,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
     <section class="background">
         <form action="" class="floatingForm">
-            <h2 class="">Presupuesto y asesoramiento, gratis: </h2>
-            <input type="text" name="nombre" id="" placeholder="Nombre*">
-            <input type="text" name="apellido" id="" placeholder="Apellido*">
-            <input type="text" name="tlf" id="" placeholder="Teléfono*">
-            <input type="submit" value="Te llamamos">
+            <h2 class="formTitle">Presupuesto y asesoramiento, gratis: </h2>
+            <label class="formLabel" for="nombre">Nombre</label>
+            <input class="textInput" type="text" name="nombre" id="">
+            <label class="formLabel" for="apellidos">Apellidos</label>
+            <input class="textInput" type="text" name="apellidos" id="">
+            <label class="formLabel" for="tlf">Número de teléfono</label>
+            <input class="textInput" type="text" name="tlf" id="">
+            <input class="submitInput" type="submit" value="Te llamamos">
         </form>
     </section>
 

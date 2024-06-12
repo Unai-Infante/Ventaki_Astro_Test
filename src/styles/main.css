@@ -1,15 +1,19 @@
 /* Variables */
 :root {
     --white-color: white;
-    --white-color-transparent: rgba(255, 255, 255, 0.1);
+    --white-color-10-transparent: rgba(255, 255, 255, 0.1);
+    --white-color-90-transparent: rgba(255, 255, 255, 0.9);
     --light-gray-color: #F1F1F1;
     --black-color: #191919;
+    --gray-color: #c0c0c0;
+    --dark-gray-color: #B4B4B8;
 }
 
 /* Estilos generales para todas las páginas */
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto';
 }
 
 header {
@@ -102,8 +106,26 @@ a {
 }
 
 .floatingForm {
+    display: flex;
+    flex-direction: column;
     padding: 10%;
     background-color: var(--white-color);
     color: var(--black-color);
     border-radius: 15px;
+    box-shadow: 0px 2px 5px var(--dark-gray-color);
+
+    .formTitle {
+        margin-bottom: 10%;
+    }
+
+    .formLabel {
+        margin-bottom: 2%;
+    }
+
+    .textInput {
+        margin-bottom: 4%;
+        padding: 4%;
+        border: solid 1px var(--gray-color);
+        border-radius: 2px;
+    } 
 }
