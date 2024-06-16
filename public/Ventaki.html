@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="http://localhost:4321/favicon.svg"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v4.9.3"><!-- Tipografías de Google --><!-- Roboto --><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="Ventaki_files/css2_002.css" rel="stylesheet"><!-- Open Sans --><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="Ventaki_files/css2.css" rel="stylesheet"><title>Ventaki</title><style data-vite-dev-id="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/styles/main.css">/* Variables */
+:root {
+    --white-color: white;
+    --white-color-10-transparent: rgba(255, 255, 255, 0.25);
+    --white-color-90-transparent: rgba(255, 255, 255, 0.9);
+    --light-gray-color: #F1F1F1;
+    --black-color: #191919;
+    --gray-color: #c0c0c0;
+    --dark-gray-color: #B4B4B8;
+    --red-color: #C40C0C;
+}
+
+/* Estilos generales para todas las páginas */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 90vw;
+    padding: 5vw;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 0;
+}
+
+main {
+    width: 100vw;
+}
+
+footer {
+    width: 90vw;
+    padding: 5vw;
+    background-color: var(--white-color);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 750;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fontWhite {
+    color: var(--white-color);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.flex {
+    display: flex;
+}
+
+.fullWith {
+    width: 100%;
+}
+
+.fullHeight {
+    height: 100%;
+}
+
+/* Menú */
+.navBar {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+
+    .navLogo {
+        max-width: 50%;
+        height: auto;
+
+        img {
+            /* width: 100%; */
+            height: auto;
+        }
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .hamburguer {
+        cursor: pointer;
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: var(--black-color);
+        }
+    }
+}
+
+/* Estilos de la Landing Page --index.astro-- */
+
+/* Primeros dos artículos */
+.backgroundImg {
+    width: 100%;
+    background-image: url('/ventanalMain.jpg');
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .textOverImg{
+        background: rgba(0, 0, 0, 0.3);
+        padding: 10%;
+        padding-top: 45%;
+        padding-bottom: 30%;
+    } 
+}
+
+/* Segundo artículo */
+.background {
+    width: 90%;
+    background-color: var(--light-gray-color);
+    padding: 5%;
+}
+
+.floating {
+    padding: 10%;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px var(--dark-gray-color);
+}
+
+.floatingForm {
+    /* display: flex; */
+    flex-direction: column;
+
+    .formTitle {
+        margin-bottom: 10%;
+    }
+
+    .formLabel {
+        margin-bottom: 2%;
+    }
+
+    .textInput {
+        margin-bottom: 4%;
+        padding: 4%;
+        border: solid 1px var(--gray-color);
+        border-radius: 5px;
+    } 
+
+    .submitInput {
+        align-self: center;
+        width: 60%;
+        margin-top: 5%;
+        padding: 5%;
+        background-color: var(--red-color);
+        border-radius: 5px;
+        color: var(--white-color);
+        font-weight: 500;
+        border: none;
+        box-shadow: 0px 2px 2px var(--gray-color);
+    }
+}
+
+/* Tercer artículo */
+.importantText {
+    width: 80%;
+    padding: 10%;
+
+    .headline {
+        font-weight: 1000;
+        margin-bottom: 2rem;
+    }
+
+    .subHeadline {
+        line-height: 2rem;
+    }
+}
+
+/* Footer del sitio web */
+.footerTitle {
+    font-weight: 500;
+}
+
+.footerBody {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .footerSection {
+        margin: 5%;
+        flex: 1 1 30%;
+
+        p {
+            font-weight: 500;
+            margin-bottom: 5%;
+        }
+
+        li {
+            margin-bottom: 3%;
+        }
+    }
+}</style>
+<style data-vite-dev-id="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/styles/mediaQueries.css">/* Portátiles y escritorio */
+@media (min-width:961px) {
+    /* Generales */
+    header {
+        width: 98vw;
+        padding: 1vw;
+        background: var(--white-color-10-transparent);
+    }
+
+    /* Header */
+    .navVar {
+        .navLogo {
+            max-width: 10%;
+            height: auto;
+    
+            img {
+                /* width: 100%; */
+                height: auto;
+            }
+        }
+    }
+
+    .fullHeight {
+        height: 100%;
+    }
+
+    /* Primer artículo */
+    .backgroundImg {
+        width: 100%;
+        display: flex;
+
+        .textOverImg {
+            width: 60%;
+            padding-top: 25%;
+            padding-bottom: 25%;
+        }
+    }
+    
+    /* Segundo artículo */
+    .background {
+        width: 40%;
+        padding: 5% 5% 5% 5%;
+    }
+
+    .floaterBackground {
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+    }
+
+    .floating {
+        width: 90%;
+        padding: 5%;
+        box-shadow: 0px 2px 15px var(--black-color);
+    }
+    
+    .floatingForm {
+        /* width: 80%;
+        padding: 10%;
+        box-shadow: 0px 2px 15px var(--black-color); */
+
+        .textInput {
+            background: none;
+        }
+    }
+
+    /* Tercer artículo */
+    .importantText {
+        width: 90%;
+        padding: 5%;
+    }
+
+    /* Footer */
+    .footerBody {
+
+        .footerSection {
+            flex: 1 1 15%;
+        }
+    }
+}
+</style><script type="module" src="Ventaki_files/index.js"></script>
+<script type="module" src="Ventaki_files/client.js"></script>
+<script type="module" src="Ventaki_files/entrypoint.js"></script>
+<script>window.__astro_dev_toolbar__ = {"root":"/Users/unaiinfante/Desktop/DW/Ventaki_Astro/","version":"4.9.3","debugInfo":"Astro                    v4.9.3\nNode                     v22.2.0\nSystem                   macOS (x64)\nPackage Manager          npm\nOutput                   static\nAdapter                  none\nIntegrations             none"}</script>
+<script type="module" src="Ventaki_files/main.css"></script>
+<script type="module" src="Ventaki_files/mediaQueries.css"></script></head><body data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/layouts/BaseLayout.astro" data-astro-source-loc="10:11"> <header data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="7:9"> <nav class="flex navBar" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="8:30"> <a href="http://localhost:4321/" class="navLogo" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="9:37"> <img class="fullWidth" src="Ventaki_files/logo_ventaki.png.webp" alt="El logo de la empresa, en rojo vivo y mayúsculas." width="500" height="200" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="10:14"> </a> <ul class="navMenu" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="13:29"> <li class="navItem" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="14:33"> <a href="" class="navLink" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="15:44">Productos</a> </li> <li class="navItem" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="17:33"> <a href="" class="navLink" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="18:44">Empresa</a> </li> <li class="navItem" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="20:33"> <a href="" class="navLink" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="21:44">Financiación</a> </li> <li class="navItem" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="23:33"> <a href="" class="navLink" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="24:44">Galería</a> </li> <li class="navItem" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="26:33"> <a href="" class="navLink" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="27:44">Contacto</a> </li> </ul> <div class="hamburguer" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="31:33"> <span class="bar" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="32:14"></span> <span class="bar" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="33:14"></span> <span class="bar" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/header.astro" data-astro-source-loc="34:14"></span> </div> </nav> </header>  <main data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="5:11"> <article class="backgroundImg" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="6:40"> <section class="textOverImg" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="7:42"> <h1 class="fontWhite" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="8:39">Hacemos que estar en casa sea <span class="italic" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="8:90">agradable.</span></h1> </section> <article class="background floaterBackground" id="formBackground" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="11:75"> <form action="" class="floating flex floatingForm" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="12:64"> <h2 class="formTitle" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="13:39">Asesoramos y preparamos un presupuesto, gratis: </h2> <label class="formLabel" for="nombre" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="14:55">Nombre</label> <input class="textInput" type="text" name="nombre" id="" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="15:18"> <label class="formLabel" for="apellidos" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="16:58">Apellidos</label> <input class="textInput" type="text" name="apellidos" id="" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="17:18"> <label class="formLabel" for="tlf" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="18:52">Número de teléfono</label> <input class="textInput" type="text" name="tlf" id="" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="19:18"> <input class="submitInput" type="submit" value="SOLICITAR" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="20:18"> </form> </article></article>  <article class="importantText" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="23:40"> <h2 class="headline" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="24:34">Deja los problemas fuera de tu hogar.</h2> <p class="subHeadline" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="25:36">Más
+ de 30 años en el sector dan para mucho. Gracias a esa experiencia nos 
+aseguramos de que el frío, el calor y el ruido sean cosas de la calle, 
+no de tu casa. Contamos con ventanas de máxima calidad y aislamiento, 
+pero también con profesionales que tratarán tu casa como la suya.</p> </article> <article class="flex" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="27:31"> <section class="background" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="28:41"> <article class="floating" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="29:43"> <h2 data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="30:25">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2> <p data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="31:24">Vestibulum
+ quis pharetra est, quis varius augue. Nullam pellentesque lectus eu 
+semper porttitor. Nullam mattis tortor eget neque scelerisque, sit amet 
+rhoncus lorem imperdiet. Pellentesque habitant morbi tristique senectus 
+et netus et malesuada fames ac turpis egestas. Mauris vel risus nec 
+lorem aliquam fermentum a at tortor. Nunc dapibus vitae diam vitae 
+consequat. Cras sed dui lacus.</p> </article> </section></article> <section class="fullHeight backgroundImg" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="34:55"> <h2 data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/pages/index.astro" data-astro-source-loc="35:21">ALUMINIO</h2> </section> </main>   <footer data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="3:9"> <p class="footerTitle" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="4:28">Ventanas Ventaki SL</p> <article class="flex footerBody" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="5:38"> <section class="footerSection" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="6:40"> <p data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="7:16">Empresa</p> <ul data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="8:17"> <li data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="9:21">Conócenos</li> <li data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="10:21">
+Poligono Ibaiondo 1
+                    Pabellones 5-6.
+                    20271 IRURA
+                    (Gipuzkoa)
+</li> </ul> </section> <section class="footerSection" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="18:40"> <p data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="19:16">Productos</p> <ul data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="20:17"> <li data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="21:21">Brilliant Design 799</li> <li data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="22:21">GENEO</li> <li data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="23:21">Classic 52 RPT</li> <li data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="24:21">RS65 Evolution RPT*</li> </ul> </section> <section class="footerSection" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="27:40"> <p data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="28:16">Contacto</p> <ul data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="29:17"> <li data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="30:21">+34 943 107 807</li> <li data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="31:21">+34 945 101 097</li> <li data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="32:21">+33 553 521 119</li> </ul> </section> <section class="footerSection" data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="35:40"> <p data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="36:16">Privacidad</p> <ul data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="37:17"> <li data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="38:21">Política de cookies</li> <li data-astro-source-file="/Users/unaiinfante/Desktop/DW/Ventaki_Astro/src/components/footer.astro" data-astro-source-loc="39:21">Aviso legal</li> </ul> </section> </article> </footer> <astro-dev-toolbar></astro-dev-toolbar></body></html>

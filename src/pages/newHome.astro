@@ -1,9 +1,26 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import NewBaseLayout from "../layouts/NewBaseLayout.astro";
 ---
-<BaseLayout title="Ventaki">
+<NewBaseLayout title="Ventaki">
     <main>
-        <article class="fullWidth twoSectionArticle backgroundImg" style="background-image: url('/ventanalMain.jpg');">
+        <article class="columnToRow backgroundImg" style="background-image: url('ventanalMain.jpg');">
+            <section class="twoModules" id="landingHeadline">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+            </section>
+            <section class="twoModules" id="landingMainCTA">
+                <form action="" class="floatingForm">
+                    <h2 class="">Asesoramos y preparamos un presupuesto, gratis: </h2>
+                    <label class="floatingFormLabel" for="nombre">Nombre</label>
+                    <input class="floatingFormInput" type="text" name="nombre" id="">
+                    <label class="floatingFormLabel" for="apellidos">Apellidos</label>
+                    <input class="floatingFormInput" type="text" name="apellidos" id="">
+                    <label class="floatingFormLabel" for="tlf">Número de teléfono</label>
+                    <input class="floatingFormInput" type="text" name="tlf" id="">
+                    <input class="floatingFormSubmit" type="submit" value="SOLICITAR">
+                </form>
+            </section>
+        </article>
+        <!-- <article class="fullWidth twoSectionArticle backgroundImg" style="background-image: url('/ventanalMain.jpg');">
             <section class="halfWidth transparentBlackBackground">
                 <section class="fullWidth textOverImg">
                     <h1 class="fontWhite">Hacemos que estar en casa sea <span class="italic">agradable.</span></h1>
@@ -37,9 +54,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             </section>
             <section class="backgroundImg" style="background-image: url('/ventanaLluvia.avif');">
             </section>
-        </article>
+        </article> -->
     </main>
-    <script>
+    <!-- <script>
         function reorganizeMainDiv() {
             var backgroundImg = this.document.querySelector('.backgroundImg');
             var background = this.document.querySelector('#formBackground');
@@ -53,5 +70,5 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         // window.addEventListener('load', reorganizeMainDiv);
         // window.addEventListener('resize', reorganizeMainDiv);
-    </script>
-</BaseLayout>
+    </script> -->
+</NewBaseLayout>

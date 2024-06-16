@@ -1,49 +1,87 @@
 /* Portátiles y escritorio */
 @media (min-width:961px) {
+    /* Generales */
     header {
-        width: 96vw;
-        padding: 2vw;
-        background: var(--white-color-10-transparent);
+        width: 98vw;
+        padding: 1vw;
+        background: var(--white-color-25-transparent);
     }
 
+    .columnRowContainer {
+        display: row;
+    }
+
+    .fullHeight {
+        height: 100%;
+    }
+
+    /* Header */
+    .navBar {
+        .navLogo {
+            max-width: 30%;
+            height: auto;
+    
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    /* Primer artículo */
     .backgroundImg {
-        width: 100%;
         display: flex;
 
         .textOverImg {
-            width: 70%;
+            width: 60%;
             padding-top: 25%;
             padding-bottom: 25%;
         }
     }
     
+    /* Segundo artículo */
     .background {
-        background: rgba(0, 0, 0, 0.3);
         width: 40%;
-        padding: 5%;
+        padding: 5% 5% 5% 5%;
+    }
+
+    .floaterBackground {
+        /* background: var(--transparent-black-color); */
         display: flex;
         align-items: center;
     }
+
+    .floating {
+        width: 90%;
+        padding: 5%;
+        box-shadow: 0px 2px 15px var(--black-color);
+    }
     
     .floatingForm {
-        width: 80%;
-        padding: 10%;
-        box-shadow: 0px 2px 15px var(--black-color);
 
         .textInput {
             background: none;
         }
     }
 
+    /* Tercer artículo */
     .importantText {
         width: 90%;
         padding: 5%;
     }
 
+    /* Footer */
     .footerBody {
 
         .footerSection {
             flex: 1 1 15%;
         }
     }
+
+    /* Objetos */
+    .twoSectionArticle {
+        flex-direction: row;
+    }
 }
+
+/* Reestructuración */

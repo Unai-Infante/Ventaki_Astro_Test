@@ -1,0 +1,45 @@
+@media (min-width: 931px) {
+    // módulos únicos
+    header {
+        width: 98vw;
+        padding: 1vw;
+        background-color: $transparent-white-25;
+        position: absolute;
+
+        .navBar {
+            .navLogo {
+                max-width: 20%;
+            }
+        }
+    }
+
+    #landingHeadline {
+        h1 {
+            margin: 30% 10% 20% 10%;
+        }
+    }
+
+    #landingMainCTA {
+        background: $transparent-black-30;
+
+        form {
+            background-color: $transparent-white-90;
+        }
+    }
+
+    // Propiedades
+    .columnToRow {
+        flex-direction: row;
+    
+        .twoModules {
+            width: 50%;
+        }
+    }
+
+    .floatingForm {
+        margin: 15%;
+        margin-top: 25%;
+        padding: 7%;
+        background-color: $transparent-white-90;
+    }
+}

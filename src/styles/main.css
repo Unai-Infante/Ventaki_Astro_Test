@@ -1,10 +1,11 @@
 /* Variables */
 :root {
     --white-color: white;
-    --white-color-10-transparent: rgba(255, 255, 255, 0.25);
+    --white-color-25-transparent: rgba(255, 255, 255, 0.25);
     --white-color-90-transparent: rgba(255, 255, 255, 0.9);
     --light-gray-color: #F1F1F1;
     --black-color: #191919;
+    --transparent-black-color: rgba(0, 0, 0, 0.3);
     --gray-color: #c0c0c0;
     --dark-gray-color: #B4B4B8;
     --red-color: #C40C0C;
@@ -15,6 +16,10 @@
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
 }
 
 header {
@@ -52,17 +57,8 @@ a {
     text-decoration: none;
 }
 
-.fontWhite {
-    color: var(--white-color);
-}
-
-.italic {
-    font-style: italic;
-}
-
 /* Menú */
 .navBar {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 
@@ -71,7 +67,7 @@ a {
         height: auto;
 
         img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
         }
     }
@@ -96,36 +92,26 @@ a {
 }
 
 /* Estilos de la Landing Page --index.astro-- */
-.backgroundImg {
-    width: 100%;
-    background-image: url('/ventanalMain.jpg');
-    background-position: start;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    .textOverImg{
-        background: rgba(0, 0, 0, 0.3);
-        padding: 10%;
-        padding-top: 45%;
-        padding-bottom: 30%;
-    } 
-}
+/* Primeros dos artículos */
 
+/* Segundo artículo */
 .background {
     width: 90%;
-    /* background-color: rgba(172, 0, 0, 0.3); */
     background-color: var(--light-gray-color);
     padding: 5%;
 }
 
-.floatingForm {
-    display: flex;
-    flex-direction: column;
+.floating {
     padding: 10%;
     background-color: var(--white-color);
     color: var(--black-color);
     border-radius: 15px;
     box-shadow: 0px 2px 5px var(--dark-gray-color);
+}
+
+.floatingForm {
+    flex-direction: column;
 
     .formTitle {
         margin-bottom: 10%;
@@ -156,6 +142,7 @@ a {
     }
 }
 
+/* Tercer artículo */
 .importantText {
     width: 80%;
     padding: 10%;
@@ -170,12 +157,12 @@ a {
     }
 }
 
+/* Footer del sitio web */
 .footerTitle {
     font-weight: 500;
 }
 
 .footerBody {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
@@ -193,3 +180,54 @@ a {
         }
     }
 }
+
+/* Objetos */
+.twoSectionArticle {
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundImg {
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+
+    .textOverImg{
+        /* background: var(--transparent-black-color); */
+        padding: 10%;
+        padding-top: 54%;
+        padding-bottom: 30%;
+    } 
+}
+
+/* Clases atómicas */
+.fontWhite {
+    color: var(--white-color);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.flex {
+    display: flex;
+}
+
+.transparentBlackBackground {
+    background: var(--transparent-black-color);
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.halfWidth {
+    width: 50%;
+}
+
+.fullHeight {
+    height: 100%;
+}
+
+/* Reestructuración */

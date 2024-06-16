@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 90vw;
+    padding: 5vw;
+    background-color: $white;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    width: 100vw;
+}
+
+footer {
+    width: 90vw;
+    padding: 5vw;
+    background-color: $white;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 750;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
