@@ -13,9 +13,10 @@
         }
     }
 
+    // IDs
     #landingHeadline {
         h1 {
-            margin: 30% 10% 20% 10%;
+            margin: 0 0 0 10%;
         }
     }
 
@@ -27,13 +28,18 @@
         }
     }
 
-    // Propiedades
+    // Clases
     .columnToRow {
         flex-direction: row;
     
         .twoModules {
-            width: 50%;
+            width: 44%;
+            padding: 3%;
         }
+    }
+
+    .backgroundImg {
+        min-height: 100%;
     }
 
     .floatingForm {

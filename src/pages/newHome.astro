@@ -3,7 +3,7 @@ import NewBaseLayout from "../layouts/NewBaseLayout.astro";
 ---
 <NewBaseLayout title="Ventaki">
     <main>
-        <article class="columnToRow backgroundImg" style="background-image: url('/ventanalMain.jpg');">
+        <article class="columnToRow backgroundImg" style="background-image: url('/ventanalMain.jpg');" id="module1">
             <section class="twoModules" id="landingHeadline">
                 <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
             </section>
@@ -19,6 +19,17 @@ import NewBaseLayout from "../layouts/NewBaseLayout.astro";
                     <input class="floatingFormSubmit" type="submit" value="SOLICITAR">
                 </form>
             </section>
+        </article>
+        <article class="importantText" id="module2">
+            <h2>Vestibulum quis pharetra est, quis varius augue.</h2>
+            <p>Nullam pellentesque lectus eu semper porttitor. Nullam mattis tortor eget neque scelerisque, sit amet rhoncus lorem imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris vel risus nec lorem aliquam fermentum a at tortor. Nunc dapibus vitae diam vitae consequat. Cras sed dui lacus. Morbi sit amet elit quis ante rhoncus congue et sed odio. Donec placerat massa quis porta sodales. Morbi id vulputate turpis. Aliquam ut gravida lacus, ut consequat arcu. Curabitur nec diam finibus, aliquam nunc id, venenatis quam. </p>
+        </article>
+        <article class="columnToRow" id="module3">
+            <section class="twoModules">
+                <h2>Suspendisse non nisi tempus, placerat eros nec, vulputate leo.</h2>
+                <p>Quisque ultrices elit sit amet urna dapibus facilisis. Maecenas posuere bibendum ligula eget accumsan. Donec tristique ullamcorper quam, eget pretium purus maximus a. Aliquam erat volutpat. Cras nec arcu nec tellus tempus ultrices a ac odio. Morbi euismod ullamcorper nunc, eget feugiat sapien pharetra at.</p>
+            </section>
+            <section class="twoModules backgroundImg" style="background-image: url('/ventanaLluvia.avif')"></section>
         </article>
         <!-- <article class="fullWidth twoSectionArticle backgroundImg" style="background-image: url('/ventanalMain.jpg');">
             <section class="halfWidth transparentBlackBackground">
